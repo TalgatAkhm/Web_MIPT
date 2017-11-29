@@ -4,7 +4,7 @@ import(
 	"unicode"
 	)
 
-func RemoveEven(inputArray [] int) int[] {
+func RemoveEven(inputArray [] int) []int {
 	slice:=make([]int,0)
 	for i:= range inputArray {
 		if inputArray[i]%2 != 0 {
