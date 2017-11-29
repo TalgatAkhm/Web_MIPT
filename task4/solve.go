@@ -1,10 +1,8 @@
 package main
 
-import(
-	"unicode"
-	)
+import "unicode"
 
-func RemoveEven(inputArray [] int) int[] {
+func RemoveEven(inputArray [] int) []int {
 	slice:=make([]int,0)
 	for i:= range inputArray {
 		if inputArray[i]%2 != 0 {
@@ -16,7 +14,7 @@ func RemoveEven(inputArray [] int) int[] {
 }
 
 func PowerGenerator(a int) func() int {
-	temp_a:=a
+	temp_a := a
 	return func() (pow int) {
 		pow = temp_a
 		temp_a = temp_a * a
